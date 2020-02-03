@@ -19,11 +19,7 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    if @user.update(user_params)
-      flash[:success] = "User succesfully updated!"
-    else
-      render 'edit'
-    end
+    render 'edit' unless @user.update(user_params)
   end
 
   private
