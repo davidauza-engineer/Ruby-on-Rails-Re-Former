@@ -1,0 +1,15 @@
+<%= form_for @user, url: {action: "update"} do |f| %>
+  <%= f.label :name, 'Your username here' %>
+  <%= f.text_field :name, value: @user.name %>
+  <%= f.label :email %>
+  <%= f.email_field :email, value: @user.email %>
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+  <%= f.submit "Update" %>
+<% end %>
+
+<% if @user.errors.any? %>
+  <div>
+    <%= @user.errors.full_messages%>
+  </div>
+<% end %>
