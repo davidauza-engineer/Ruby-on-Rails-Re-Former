@@ -66,4 +66,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/davidauza-engineer/Ruby-on-Rails-Re-Former/blob/feature-forms/LICENSE) licensed.
+This project is [MIT](https://github.com/davidauza-engineer/Ruby-on-Rails-Re-Former/blob/master/LICENSE) licensed.
